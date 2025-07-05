@@ -3,7 +3,8 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,6 +17,7 @@ header {
     justify-content: space-between;
     max-width: 1512px;
     padding: 70px 106px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -45,360 +47,243 @@ button {
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-.lang {
+.hero-product {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 40px;
     align-items: center;
-    gap: 3px;
 }
 
-.hero {
-    height: 981px;
-    background: url(../images/hero.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    padding-bottom: 139px;
-}
-
-.hero-search {
-    display: flex;
-}
-
-.hero-search div {
-    width: 235px;
-    padding: 24px 20px;
-    color: white !important;
-}
-
-
-.hero-search select {
-    color: white;
-    background: transparent;
-    border: none;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 5px 0px;
-}
-
-.hero-search button {
-    padding: 20px;
-}
-
-h2 {
-    font-family: "Lora", sans-serif;
-    font-size: 64px;
-    line-height: 145%;
-    color: #888888;
-    font-weight: 700;
-}
-
-.about {
-    text-align: center;
-    max-width: 1080px;
-    padding: 60px;
-    width: 100%;
-    margin: 100px auto;
-}
-
-.about p {
-    margin: 16px 0px;
-}
-
-.events {
-    padding: 0px 106px;
-    text-align: center;
-}
-
-.event-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin: 25px 0px;
-}
-
-.event-card {
-    width: 420px;
-    position: relative;
-}
-
-.event-card img {
-    width: 100%;
-    height: 359px;
+.hero-product img {
+    max-width: 50%;
+    height: auto;
     object-fit: cover;
 }
 
-.event-card figcaption {
-    padding: 50px;
+.hero-product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.event-card h4 {
-    font-size: 20px;
+.hero-product h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero-product h2 {
+    font-size: 24px;
+    color: #888;
     font-weight: 400;
-    line-height: 150%;
-    margin-bottom: 10px;
 }
 
-.event-card p {
+.hero-product-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #076BB2;
+}
+
+.hero-product-about {
     font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    text-transform: uppercase;
+    line-height: 1.5;
 }
 
-
-.event-card-date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 130px;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: white;
+.hero-product-additional-details {
+    font-size: 14px;
+    color: #888;
 }
 
-.event-card-number {
-    font-size: 40px;
-}
-
-.event-card-month {
-    font-size: 20px;
-}
-
-.contact-us {
-    margin: 100px 0px;
-    text-align: center;
-}
-
-.contact-form {
-    padding: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 65px;
-    max-width: 1080px;
+.products {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 40px;
 }
 
-.contact-form-fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 65px;
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
 }
 
-.contact-form-fields input {
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    font-size: 16px;
-    padding: 10px;
+.product-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.contact-form button {
-    width: max-content;
-    align-self: center;
+.product-card {
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid black;
-    resize: none;
-    height: 100px;
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card figcaption {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-card-about {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-card-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #076BB2;
 }
 
 footer {
     background: #033C65;
     color: white;
+    padding: 60px 0;
 }
 
 .footer-info {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 65px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 footer h2 {
-    font-family: "Inter", serif;
-    text-align: center;
-    color: white;
-    margin-bottom: 65px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
 }
 
 .footer-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .footer-links-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 24px;
+    min-width: 200px;
 }
 
-.footer-links-list h4 {
-    color: white;
-    font-family: "Lora", serif;
-    font-weight: 700;
-    margin-bottom: 14px;
-    font-size: 24px;
+.footer-links-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .footer-links-list a {
     color: white;
-    font-weight: 100;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
 }
 
-.footer-social-media {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid white;
-}
-
-.footer-additional-policy {
-    display: flex;
-    gap: 15px;
-    padding: 15px 0px;
-}
-
-.footer-additional-policy a {
-    color: white;
-    font-weight: 100;
-}
-
-.footer-rights {
-    opacity: 0.5;
-    font-weight: 100;
-}
-
-
-.burger-menu-btn {
-    all: unset;
-    cursor: pointer;
-    display: none;
-}
-
-
-@media screen and (max-width: 1224px) {
-    header {
-        padding: 40px;
-    }
+.footer-links-list a:hover {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 992px) {
-    .burger-menu-btn {
-        display: block;
+    header {
+        padding: 40px;
     }
-
-    header nav {
-        display: none;
-    }
-
-    .hero-search div {
-        width: unset;
-    }
-
-    .hero-search {
+    
+    .hero-product {
         flex-direction: column;
-        width: max(50%, 400px);
+        padding: 20px;
     }
-
-    .event-cards {
-        display: flex;
-        flex-wrap: wrap;
+    
+    .hero-product img {
+        max-width: 100%;
     }
-
-    .event-card {
-        max-width: 600px;
-        min-width: 400px;
-        flex: 1;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    .contact-form-fields {
-        grid-template-columns: repeat(1, 1fr);
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
     }
-
-    .footer-links,
-    .footer-rights,
-    .footer-additional-policy,
-    .footer-additional {
-        display: none;
+    
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    footer h2 {
-        margin: unset;
+    
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 576px) {
-    header {
-        padding: 20px;
-    }
-
-    header .logo {
+    header nav a {
         font-size: 16px;
     }
-
-    h2 {
+    
+    button {
+        padding: 10px 40px;
+        font-size: 18px;
+    }
+    
+    .hero-product h1 {
+        font-size: 28px;
+    }
+    
+    .hero-product h2 {
         font-size: 20px;
     }
-
-    .about p {
-        font-size: 12px;
-    }
-
-    .event-card {
-        max-width: none;
-        min-width: 450px;
-        width: 100%;
-    }
-
-    .events {
-        padding: 10px;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
     
-    .hero{
-        height: 468px;
-        padding-bottom: 20px;
-    }
-    
-    .hero-search {
-        margin: 10px;
-        width: 100%;
-        
-    }
-
-    .event-card {
-        min-width: 300px;
-        width: 100%;
-    }
-
-    .event-card-date {
-        width: 70px;
-        height: 70px;
-    }
-
-    .event-card-month {
-        font-size: 14px;
-    }
-
-    .event-card-number {
-        font-size: 18px;
+    .products h2 {
+        font-size: 24px;
     }
 }
