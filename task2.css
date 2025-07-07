@@ -1,42 +1,32 @@
-*{
+{
     margin: 0;
     padding: 0;
     font-family: Arial;
     box-sizing: border-box;
 }
+.back-to-main{
+    display: block;
+margin: 20px;
+width: max-content;
+}
+body{
+background:#f5f5f5
+}
 
 .card{
-    background: lightgray;
-    width: max-content;
-    padding-bottom: 24px;
-    margin: 40px 20px;
-    transition: 0.5s;
-    display: inline-block;
-}
+       max-width: 500px;
+    width: 100%;
+    background: white;
+     margin: 20px auto;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow:0px 5px 15px rgba(0, 0, 0, 1);
+    transition: 0,3s;
+    }
 
-.card:hover{
-    transform: scale(1.05);
-}
-
-
-.card h3{
-    margin: 8px;
-    font-size: 22px;
-}
-
-.card .info{
-    margin: 8px;
-    color: gray;
-}
-
-.card .price{
-    margin: 8px;
-    font-weight: bold;
-}
-
-.card .old-price{
-    font-size: 14px;
-    color: darkgray;
-    text-decoration: line-through;
-    margin-left: 8px;
+ .card:hover{
+    transition: scale(1.05);
+ }   
+.card.favorite{
+    text-align:right
 }
